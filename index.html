@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="describe this site">
+    <meta name="keywords" content="keywords for this site">
+    <meta name="author" content="Kyle Barlow">
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Bootstrap CSS -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <base href="/">
+</head>
+
+<body ng-controller="myCtrl">
+
+    <div class="chartz">
+        <canvas id="line" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series"></canvas>
+
+    </div>
+
+
+    <canvas id="pie" class="chart chart-pie"
+      chart-data="data" chart-labels="labels">
+    </canvas> 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <!-- Angular Charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <script src="https://rawgit.com/jtblin/angular-chart.js/master/dist/angular-chart.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ctrl.js"></script>
+</body>
+
+</html>
